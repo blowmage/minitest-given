@@ -1,0 +1,11 @@
+.autotest
+CHANGELOG.rdoc
+Manifest.txt
+README.rdoc
+Rakefile
+lib/minitest-given.rb
+lib/minitest/given.rb
+minitest-given.gemspec
+test/test_assertions.rb
+test/test_comparison.rb
+test/test_version.rb
