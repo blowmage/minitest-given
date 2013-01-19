@@ -19,7 +19,8 @@ module MiniTest
     def self.Then &block
       # I want to call wrong's assert passing the block!
       # I don't want to call the standard assert here.
-      it { assert instance_eval(&block) }
+      file, line = eval("[__FILE__, __LINE__]", block.binding)
+      it { instance_eval("assert(false)", file, line) unless instance_eval(&block) }
     end
 
     class << self
