@@ -10,7 +10,7 @@ Given/When/Then built on top of minitest's spec DSL.
 
 Add the following to your test or helper:
 
-    require "minitest/rails/capybara"
+    require "minitest/given"
 
 == Usage
 
